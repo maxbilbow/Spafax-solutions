@@ -22,7 +22,7 @@ Tast 3D: Presenting the censored word count to the application:
 public WordCount CountCensoredWords(text, words)
 {
    ...
-   NotificationCenter.LogMessage("WordCountWasIncreased", wordCount);
+   NotificationCenter.LodgeMessage("WordCountWasIncreased", wordCount);
    return wordCound;
 }
 ```
