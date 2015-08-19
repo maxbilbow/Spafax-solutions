@@ -13,5 +13,16 @@ To present the censored word count, you could:
       }
    } 
 ```
- * If the application needs to know when the count is updated using a Key-Value Observer pattern would be efficient, allowing future applications to register for changes to the count of any or all words
+ * If the application needs to know when the count is updated using a Key-Value Observer pattern would be efficient, allowing future applications to register for changes to the count of any or all words.
+ ```c#
+   Program.AddObserverForKey("Total", theApplication);
+```
  * A visitor patten, where the program broadcasts a message to a "NotificationCenter" class who then sends the message to any objects who which to be notified about it.
+ ```c#
+public WordCount CountCensoredWords(text, words)
+{
+   ...
+   NotificationCenter.LogMessage("WordCountWasIncreased", wordCount);
+   return wordCound;
+}
+```
