@@ -1,7 +1,7 @@
 # Spafax-solutions
 Spafax.codingtest
 
-To present the censored word count, you could:
+Tast 3D: Presenting the censored word count to the application:
  * keep a private WordCount object (see Solution.WordCount); field in the class and increment the count as each word is censored.
    this could be accessed through a standard getter method: GetCountForWord(string word) or readonly variable: 
   
