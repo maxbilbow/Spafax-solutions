@@ -7,8 +7,7 @@ namespace Spafax.CodingTest.Tests
 	{
 		
 		Solution program;
-		string input = "I have a cat named Meow and a dog name Woof. I love the dog a lot. He is larger than a small horse.";
-		string [] args = {"dog", "cat", "large"};
+	
 		public ProgramTest() {
 			SetupBeforeTests ();
 		}
@@ -30,7 +29,8 @@ namespace Spafax.CodingTest.Tests
 		}
 		
 		public void Task3Test(char part) {
-			
+			string input = "I have a cat named Meow and a dog name Woof. I love the dog a lot. He is larger than a small horse.";
+			string[] args = new string[] {"dog", "cat", "large"};
 			switch (part) {
 			case 'a':
 				//Task 3a test
@@ -51,25 +51,6 @@ namespace Spafax.CodingTest.Tests
 				
 				Console.Out.WriteLine(program.CensorPalindrome(input));
 				break;
-//			case 'd':
-//				Console.Out.WriteLine("\nTASK 3d");
-//				Console.Out.WriteLine("To present the censored word count, you could:" +
-//				                      "\n • keep a private WordCount object (see Solution.WordCount); " +
-//				                      "field in the class and increment the count as each word is censored." +
-//				                      "\n   this could be accessed thrugh a standard getter method: " +
-//				                      "GetCountForWord(string word) or readonly variable: " +
-//				                      "\n   int Total " +
-//				                      "\n   { " +
-//				                      "\n      get { " +
-//				                      "\n         return WordCount.Total;" +
-//				                      "\n      }" +
-//				                      "\n   } " +
-//				                      "\n • If the application needs to know when the count is updated" +
-//				                      "Usinging an Key-Value Observer pattern would be efficient, allowing " +
-//				                      "future applications to register for changes to the count of any or all words" +
-//				                      "\n • A visitor patten, where the program broadcasts a message to a \"NotificationCenter\" class" +
-//				                      " who then sends the message to any objects who which to be notifiend about it.");
-//				break;
 			default:
 				if (Char.IsUpper(part))
 					Task3Test(Char.ToLower(part));

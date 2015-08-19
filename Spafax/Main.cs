@@ -10,12 +10,10 @@ public class Program {
     public static void Main(string[] args)
     {
 		var p = new ProgramTest ();
-		p.SetupBeforeTests ();
 		p.Task1Test ();
 		p.Task2Test ();
 		p.Task3Test ('a');
 		p.Task3Test ('b');
 		p.Task3Test ('c');
-//		p.Task3Test ('d');
     }
 }

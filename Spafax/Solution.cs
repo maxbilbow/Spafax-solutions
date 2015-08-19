@@ -11,11 +11,6 @@ namespace Spafax.CodingTest.Business {
 
 		/// <summary>
 		/// Create a function which counts the number of occurrences of a given letter in a string.
-		
-		///Example:
-		
-		///Input:
-		
 		///'e' and "I have some cheese"
 		///	Output:
 		///		5
@@ -58,6 +53,7 @@ namespace Spafax.CodingTest.Business {
 		/// <returns>The word count.</returns>
 		/// <param name="text">Text.</param>
 		/// <param name="words">Words.</param>
+		/// <param name="matchSubstring">set false to avoid censoring words within words (e.g. "A school in Scunthorpe couldn't access their own website for weeks.</param>
 		public WordCount GetWordCount(string text, string []words, bool matchSubstring = true) {
 			WordCount wordCount = new WordCount();
 			text = " " + text.ToLower ();
